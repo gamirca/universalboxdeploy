@@ -83,15 +83,15 @@ function Clientes() {
     );
   });
 
-  // const renderIconeOrdenacao = (chave: keyof Cliente) => {
-  //   if (!obterClassNamesPara(chave)) {
-  //     return <FontAwesomeIcon icon={faSortUp} className="sort-icon" />;
-  //   }
-  //   if (obterClassNamesPara(chave) === 'ascendente') {
-  //     return <FontAwesomeIcon icon={faSortUp} className="sort-icon" />;
-  //   }
-  //   return <FontAwesomeIcon icon={faSortDown} className="sort-icon" />;
-  // };
+  const renderIconeOrdenacao = (chave: keyof Cliente) => {
+    if (!obterClassNamesPara(chave)) {
+      return <FontAwesomeIcon icon={faSortUp} className="sort-icon" />;
+    }
+    if (obterClassNamesPara(chave) === 'ascendente') {
+      return <FontAwesomeIcon icon={faSortUp} className="sort-icon" />;
+    }
+    return <FontAwesomeIcon icon={faSortDown} className="sort-icon" />;
+  };
 
   return (
     <div>
@@ -119,19 +119,19 @@ function Clientes() {
           <thead>
             <tr>
               <th scope="col" onClick={() => solicitarOrdenacao('ClienteId')} className={obterClassNamesPara('ClienteId')}>
-                ID 'ClienteId'
+                ID {renderIconeOrdenacao('ClienteId')}
               </th>
               <th scope="col" onClick={() => solicitarOrdenacao('ClienteNome')} className={obterClassNamesPara('ClienteNome')}>
-                Nome 'ClienteNome'
+                Nome {renderIconeOrdenacao('ClienteNome')}
               </th>
               <th scope="col" onClick={() => solicitarOrdenacao('ClienteCpf')} className={obterClassNamesPara('ClienteCpf')}>
-                CPF 'ClienteCpf'
+                CPF {renderIconeOrdenacao('ClienteCpf')}
               </th>
               <th scope="col" onClick={() => solicitarOrdenacao('ClienteTelefone')} className={obterClassNamesPara('ClienteTelefone')}>
-                Telefone 'ClienteTelefone'
+                Telefone {renderIconeOrdenacao('ClienteTelefone')}
               </th>
               <th scope="col" onClick={() => solicitarOrdenacao('ClienteCep')} className={obterClassNamesPara('ClienteCep')}>
-                CEP 'ClienteCep'
+                CEP {renderIconeOrdenacao('ClienteCep')}
               </th>
               <th scope="col">Ação</th>
             </tr>
