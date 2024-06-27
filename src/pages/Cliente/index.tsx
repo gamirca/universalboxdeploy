@@ -48,7 +48,7 @@ function Clientes() {
   }, []);
 
   const DeleteCliente = async () => {
-    await fetch('/deletarCliente', {
+    await fetch('https://universalboxdeploy.vercel.app/deletarCliente', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

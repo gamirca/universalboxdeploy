@@ -45,7 +45,7 @@ function Produtos() {
   }, []);
 
   const deletarProdutoAPI = async () => {
-    await fetch('/deletar', {
+    await fetch('https://universalboxdeploy.vercel.app/deletar', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ function Produtos() {
 
   const atualizarQuantidade = async (produtoId: string, novaQuantidade: number) => {
     try {
-      const response = await fetch('/atualizarQuantidade', {
+      const response = await fetch('https://universalboxdeploy.vercel.app/atualizarQuantidade', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

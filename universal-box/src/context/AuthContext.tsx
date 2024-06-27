@@ -75,7 +75,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   //REGISTRO
   const register = useCallback(async (credentials: RegisterCredentials): Promise<void> => {
     console.log('Register attempt with credentials:', credentials);
-    const response = await fetch('/criarUsuario', {
+    const response = await fetch('https://universalboxdeploy.vercel.app/criarUsuario', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

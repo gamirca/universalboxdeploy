@@ -49,7 +49,7 @@ function CadastroProduto() {
   };
 
   const createProduto = async () => {
-    await fetch('/criar', {
+    await fetch('https://universalboxdeploy.vercel.app/criar', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

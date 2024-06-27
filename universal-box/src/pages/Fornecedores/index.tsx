@@ -43,7 +43,7 @@ function Fornecedores() {
   }, []);
 
   const deletarFornecedorAPI = async () => {
-    await fetch('/deletarfornecedor', {
+    await fetch('https://universalboxdeploy.vercel.app/deletarfornecedor', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

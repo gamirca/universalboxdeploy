@@ -101,7 +101,7 @@ function CadastroPedidos() {
   }, [pedidos]);
 
   const createPedido = async () => {
-    const newData = await fetch('/criarpedido', {
+    const newData = await fetch('https://universalboxdeploy.vercel.app/criarpedido', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

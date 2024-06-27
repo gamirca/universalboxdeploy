@@ -59,7 +59,7 @@ function Pedidos() {
   }, []);
 
   const deletarPedidoAPI = async () => {
-    await fetch('/deletarPedido', {
+    await fetch('https://universalboxdeploy.vercel.app/deletarPedido', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
