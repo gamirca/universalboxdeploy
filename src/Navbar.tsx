@@ -51,7 +51,7 @@ function Navbar() {
               </li>
             ) : (
               <li className="nav-item">
-                <button className="nav-link btn btn-link" onClick={handleLogout}>Logout</button>
+                <button className="nav-link btn btn-link" onClick={handleLogout}>Sair</button>
               </li>
             )}
           </ul>
