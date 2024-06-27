@@ -29,7 +29,7 @@ function CadastroPedidos() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api');
+        const response = await fetch('https://universalboxdeploy.vercel.app/api');
         if (!response.ok) {
           throw new Error('Erro ao obter os dados');
         }
@@ -46,7 +46,7 @@ function CadastroPedidos() {
   useEffect(() => {
     const fetchClientes = async () => {
       try {
-        const response = await fetch('/apicliente');
+        const response = await fetch('https://universalboxdeploy.vercel.app/apicliente');
         if (!response.ok) {
           throw new Error('Erro ao obter os dados');
         }

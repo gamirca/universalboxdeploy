@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 //#region Produtos
-app.get('/api', async (req: Request, res: Response) => {
+app.get('https://universalboxdeploy.vercel.app/api', async (req: Request, res: Response) => {
   try {
     let pool = await sql.createPool(config);
     let [produtos] = await pool.query<RowDataPacket[]>('SELECT * from UniversalBox.Produtos');
@@ -84,7 +84,7 @@ app.put('/atualizarQuantidade', async (req: Request, res: Response) => {
 
 //#region Clientes
 
-app.get('/apicliente', async (req: Request, res: Response) => {
+app.get('https://universalboxdeploy.vercel.app/apicliente', async (req: Request, res: Response) => {
   try {
     let pool = await sql.createPool(config);
     let [clientes] = await pool.query<RowDataPacket[]>('SELECT * from UniversalBox.Clientes');
@@ -128,7 +128,7 @@ app.delete('/deletarCliente', async (req, res) => {
 
 //#region Pedidos
 
-app.get('/apipedido', async (req, res) => {
+app.get('https://universalboxdeploy.vercel.app/apipedido', async (req, res) => {
   try {
     let pool = await sql.createPool(config);
     let pedidos = await pool.query(
@@ -143,7 +143,7 @@ app.get('/apipedido', async (req, res) => {
   }
 });
 
-app.put('/apipedidoporid', async (req, res) => {
+app.put('https://universalboxdeploy.vercel.app/apipedidoporid', async (req, res) => {
   try {
     console.log('testeeeee' + req)
     let pool = await sql.createPool(config);
@@ -204,7 +204,7 @@ app.delete('/deletarpedido', async (req, res) => {
 //#endregion
 
 //#region Fornecedores
-app.get('/apifornecedor', async (req, res) => {
+app.get('https://universalboxdeploy.vercel.app/apifornecedor', async (req, res) => {
   try {
     let pool = await sql.createPool(config);
     let fornecedores = await pool.query(
@@ -252,7 +252,7 @@ app.delete('/deletarfornecedor', async (req, res) => {
 
 //#region Usuarios
 
-app.post('/apiusuario', async (req: Request, res: Response) => {
+app.post('https://universalboxdeploy.vercel.app/apiusuario', async (req: Request, res: Response) => {
   const { email, password } = req.body;
 
   if (!email || !password) {

@@ -20,7 +20,7 @@ function CadastroCliente() {
 
 
         try {
-            const response = await fetch('/criarcliente', {
+            const response = await fetch('https://universalboxdeploy.vercel.app/criarcliente', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

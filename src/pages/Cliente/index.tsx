@@ -33,7 +33,7 @@ function Clientes() {
   useEffect(() => {
     const fetchClientes = async () => {
       try {
-        const response = await fetch('/apicliente');
+        const response = await fetch('https://universalboxdeploy.vercel.app/apicliente');
         if (!response.ok) {
           throw new Error('Erro ao obter os dados');
         }

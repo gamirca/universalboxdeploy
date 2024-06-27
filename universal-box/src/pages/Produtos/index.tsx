@@ -30,7 +30,7 @@ function Produtos() {
   useEffect(() => {
     const buscarDados = async () => {
       try {
-        const response = await fetch('/api');
+        const response = await fetch('https://universalboxdeploy.vercel.app/api');
         if (!response.ok) {
           throw new Error('Erro ao obter os dados');
         }
@@ -102,11 +102,11 @@ function Produtos() {
         },
         body: JSON.stringify({ ProdutoId: produtoId, Quantidade: novaQuantidade })
       });
-  
+
       if (!response.ok) {
         throw new Error('Erro ao atualizar a quantidade');
       }
-  
+
       // Atualizar o estado local dos produtos
       setProdutos(produtos.map(produto =>
         produto.ProdutoId === produtoId ? { ...produto, ProdutoQuantidade: novaQuantidade } : produto

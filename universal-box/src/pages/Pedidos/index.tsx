@@ -44,7 +44,7 @@ function Pedidos() {
   useEffect(() => {
     const buscarPedidos = async () => {
       try {
-        const response = await fetch('/apiPedido');
+        const response = await fetch('https://universalboxdeploy.vercel.app/apiPedido');
         if (!response.ok) {
           throw new Error('Erro ao obter os dados');
         }

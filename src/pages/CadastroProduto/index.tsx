@@ -18,7 +18,7 @@ function CadastroProduto() {
   useEffect(() => {
     const fetchFornecedores = async () => {
       try {
-        const response = await fetch('/apifornecedor');
+        const response = await fetch('https://universalboxdeploy.vercel.app/apifornecedor');
         if (!response.ok) {
           throw new Error('Erro ao obter os dados');
         }

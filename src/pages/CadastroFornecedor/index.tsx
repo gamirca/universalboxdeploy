@@ -16,7 +16,7 @@ function CadastroFornecedor() {
   }
 
   const createFornecedor = async () => {
-    const newData = await fetch('/criarfornecedor', {
+    const newData = await fetch('https://universalboxdeploy.vercel.app/criarfornecedor', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
