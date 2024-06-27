@@ -21,6 +21,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+
 //#region Produtos
 app.get('/api', async (req: Request, res: Response) => {
   try {
