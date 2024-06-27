@@ -62,7 +62,7 @@ function CadastroFornecedor() {
                     onChange={setInput} />
 
                   <input
-                 
+
                     className="form-control mb-3"
                     placeholder="CNPJ"
                     name="FornecedorCnpj"

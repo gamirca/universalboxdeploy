@@ -46,7 +46,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const login = useCallback(async (credentials: LoginCredentials): Promise<void> => {
     console.log('Login attempt with credentials:', credentials);
-    const response = await fetch('/apiusuario', {
+    const response = await fetch('https://universalboxdeploy.vercel.app/apiusuario', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
