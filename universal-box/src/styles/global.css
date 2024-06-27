@@ -70,3 +70,27 @@ th:hover .sort-icon {
     background-color: #23272b; /* Cor de fundo mais escura ao passar o mouse */
     border-color: #23272b; /* Cor da borda ao passar o mouse */
   }
+
+  .logo-container {
+
+    text-align: center; /* Center the logo */
+  
+    margin-bottom: 20px; /* Add some space below the logo */
+  
+  }
+  
+  
+  .logo-container img {
+  
+    max-width: 310px; /* Set the logo's maximum width */
+  
+  }
+
+  .logo2 {
+
+    width: 80px; /* ajuste o valor de acordo com sua necessidade */
+  
+    height: 70px; /* ajuste o valor de acordo com sua necessidade */
+  
+    
+  }
