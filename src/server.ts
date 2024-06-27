@@ -18,8 +18,8 @@ const app = express();
 const config: PoolOptions = {
   host: process.env.DB_HOST,
   user: process.env.DB_USERNAME,
-  database: process.env.DB_PASSWORD,
-  password: process.env.DB_DBNAME,
+  database: process.env.DB_DBNAME,
+  password: process.env.DB_PASSWORD,
   port: Number(process.env.DB_PORT) || 3307
 };
 
