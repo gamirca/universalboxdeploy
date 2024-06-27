@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from './context/AuthContext';
-import logo from '../src/img/LOGOMENOR .png';
+import logo from '../src/img/LOGOMENOR.png';
 
 function Navbar() {
   const [showText, setShowText] = useState(true);
