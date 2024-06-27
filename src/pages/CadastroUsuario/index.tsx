@@ -64,7 +64,6 @@ const CadastroUsuario: React.FC = () => {
                                             className="form-control"
                                             id="username"
                                             name="username"
-                                            value={username}
                                             onChange={handleUsernameChange}
                                             required
                                         />
@@ -77,7 +76,6 @@ const CadastroUsuario: React.FC = () => {
                                             className="form-control"
                                             id="email"
                                             name="email"
-                                            value={email}
                                             onChange={handleEmailChange}
                                             required
                                         />
@@ -89,7 +87,6 @@ const CadastroUsuario: React.FC = () => {
                                             className="form-control"
                                             id="password"
                                             name="password"
-                                            value={password}
                                             onChange={handlePasswordChange}
                                             required
                                         />
@@ -101,7 +98,6 @@ const CadastroUsuario: React.FC = () => {
                                             className="form-control"
                                             id="password"
                                             name="password"
-                                            value={passwordConfirmation}
                                             onChange={handlePasswordConfirmationChange}
                                             required
                                         />
