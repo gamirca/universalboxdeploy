@@ -143,7 +143,6 @@ function CadastroPedidos() {
                     className="form-control mb-3"
                     placeholder="Quantidade"
                     name="Quantidade"
-                    value={quantidade}
                     onChange={setInput}
                   />
                   <input
