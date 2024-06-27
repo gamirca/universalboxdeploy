@@ -37,36 +37,74 @@ code {
 .sort-icon {
     visibility: hidden;
 }
-  
+
 th:hover .sort-icon {
-  visibility: visible;
+    visibility: visible;
 
 }
 
 
 .quantidade-btn {
-    margin: 0 12px; /* Ajuste o valor conforme necessário */
-    padding: 2px 6px; /* Ajuste do padding para diminuir o tamanho do botão */
-    font-size: 0.875rem; /* Ajuste do tamanho da fonte, opcional */
+    margin: 0 12px;
+    /* Ajuste o valor conforme necessário */
+    padding: 2px 6px;
+    /* Ajuste do padding para diminuir o tamanho do botão */
+    font-size: 0.875rem;
+    /* Ajuste do tamanho da fonte, opcional */
 }
 
 .trash-icon {
-    color: gray; /* Define a cor do ícone de lixeira como cinza */
+    color: gray;
+    /* Define a cor do ícone de lixeira como cinza */
 }
 
 .delete-btn {
     border-color: transparent;
     background-color: transparent;
-    padding: 0.25rem; /* Opcional: ajuste o padding para um melhor visual */
+    padding: 0.25rem;
+    /* Opcional: ajuste o padding para um melhor visual */
 }
 
 .edit-btn {
     background-color: transparent;
-    color: gray; /* Cor do texto branco */
-    border-color: transparent; /* Cor da borda igual à cor de fundo */
-  }
-  
-  .edit-btn:hover {
-    background-color: #23272b; /* Cor de fundo mais escura ao passar o mouse */
-    border-color: #23272b; /* Cor da borda ao passar o mouse */
-  }
+    color: gray;
+    /* Cor do texto branco */
+    border-color: transparent;
+    /* Cor da borda igual à cor de fundo */
+}
+
+.edit-btn:hover {
+    background-color: #23272b;
+    /* Cor de fundo mais escura ao passar o mouse */
+    border-color: #23272b;
+    /* Cor da borda ao passar o mouse */
+}
+
+.logo-container {
+
+    text-align: center;
+    /* Center the logo */
+
+    margin-bottom: 20px;
+    /* Add some space below the logo */
+
+}
+
+
+.logo-container img {
+
+    max-width: 310px;
+    /* Set the logo's maximum width */
+
+}
+
+.logo2 {
+
+    width: 80px;
+    /* ajuste o valor de acordo com sua necessidade */
+
+    height: 70px;
+    /* ajuste o valor de acordo com sua necessidade */
+
+
+}
