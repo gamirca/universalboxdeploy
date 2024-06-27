@@ -7,11 +7,19 @@ import jwt from 'jsonwebtoken';
 const API_PORT = process.env.PORT || 5555;
 const app = express();
 
+// const config: PoolOptions = {
+//   host: 'universalbox.c56eiikm60x9.us-east-2.rds.amazonaws.com',
+//   user: 'admin',
+//   database: 'UniversalBox',
+//   password: '12345678',
+//   port: Number(process.env.DB_PORT) || 3307
+// };
+
 const config: PoolOptions = {
-  host: 'universalbox.c56eiikm60x9.us-east-2.rds.amazonaws.com',
-  user: 'admin',
-  database: 'UniversalBox',
-  password: '12345678',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  database: process.env.DB_PASSWORD,
+  password: process.env.DB_DBNAME,
   port: Number(process.env.DB_PORT) || 3307
 };
 
