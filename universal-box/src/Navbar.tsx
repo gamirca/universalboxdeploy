@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from './context/AuthContext';
-import logo from '../src/img/LOGOMENOR .png';
 
 function Navbar() {
   const [showText, setShowText] = useState(true);
@@ -21,9 +20,6 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
-      <Link to="/">
-       <img src={logo} alt="logo" className="logo2" />
-          </Link>
         <button
           className="navbar-toggler"
           type="button"

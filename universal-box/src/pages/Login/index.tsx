@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthContext } from '../../context/AuthContext';
-import logo from '../../img/LOGO DOURADA COMPLETA.png';
+
 
 const Login: React.FC = () => {
   const { login } = useContext(AuthContext);
@@ -42,9 +42,6 @@ const Login: React.FC = () => {
           <div className="col-md-6">
             <div className="card">
               <div className="card-body">
-              <div className="logo-container">
-              <img src={logo} alt="LOGO DOURADA COMPLETA" />
-</div>
                 <h5 className="card-title">Acesse sua conta</h5>
                 {error && <div className="alert alert-danger">{error}</div>}
                 <form onSubmit={handleSubmit}>
